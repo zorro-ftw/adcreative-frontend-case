@@ -16,7 +16,7 @@ export default function ListItem({
 }: PropsWithChildren<ListItemProps>) {
   return (
     <li className="flex items-center gap-3 bg-afc-white-200 pl-4 py-4">
-      <input type="checkbox" checked={selected} />
+      <input type="checkbox" defaultChecked={selected} />
       <img className="w-10 h-10 rounded-md" src={imageSource} alt={imageAlt} />
       <div className="">
         {children}
